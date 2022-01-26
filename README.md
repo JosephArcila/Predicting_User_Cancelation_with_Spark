@@ -1,5 +1,5 @@
-# Disaster Response Pipeline Project
-The tools you use, and the way you approach learning can have a significant correlation with how much you get paid for your work as a data scientist.
+# Predicting Users Who Canceled Their Service with Spark
+This repository contains Data manipulation with Spark to engineer relevant features for predicting which users will cancel their music streaming service.
 
 ## Instalations needed to run the code  
 
@@ -8,16 +8,12 @@ The tools you use, and the way you approach learning can have a significant corr
 - NumPy
 - Matplotlib 3
 - Seaborn
-- Spark
-
-## Summary
-Manipulated large datasets with Spark to engineer relevant features for prediting users who canceled their music streaming service
+- PySpark
 
 ## Files
 
-### Sparkify
+### Predicting-Churn-Users.ipynb
 This notebook contains the code used for the entire exploratory analysis process and the ML model selection and tunning.
-
 
 ## Data
 
@@ -25,13 +21,14 @@ Every time the user interacts with the service it generates data that contains t
 
 <img src="https://user-images.githubusercontent.com/39535338/150736648-662d5f55-bd98-4613-b9ae-c9721b352e4e.PNG" alt="data" width="800"/>
 
+## Exploratory Data Analysis
+<img src="https://user-images.githubusercontent.com/39535338/150975285-577a7241-ab15-4e34-8650-263f3a4dcc7d.PNG" alt="drawing" width="400"/>  
+<img src="https://user-images.githubusercontent.com/39535338/150975321-02700802-f1db-4868-acaa-00d3066fd061.PNG" alt="drawing" width="400"/>  
 
 ## Modeling Process
-For fitting the data, I tried a RandomForestClassifier, DecisionTreeClassifier, LogisticRegression, and GradientBoosting. I prioritized the model that performed best at the f1 score since the dataset is imbalanced (Few Churned users).
+For fitting the data, I tried a RandomForestClassifier, DecisionTreeClassifier, and LogisticRegression. I prioritized the model that performed best at the f1 score since the dataset is imbalanced (Few Churned users).
 The best model was a RandomForestClassifier tunned with various hyperparameters and features.
 
-## Exploratory Data Analysis
-
-
-<img src="https://user-images.githubusercontent.com/39535338/150737106-20480895-0324-4f06-84d1-edab4868752e.png" alt="drawing" width="800"/>  
-<img src="https://user-images.githubusercontent.com/39535338/150737162-216442b6-3343-4e5c-9e93-a00d3315074c.png" alt="drawing" width="800"/>  
+## Model Results
+<img src="https://user-images.githubusercontent.com/39535338/151083554-4c855954-fd1c-45c4-8e73-008da977ee70.PNG" alt="drawing" width="300"/>  
+<img src="https://user-images.githubusercontent.com/39535338/151083622-925aead9-b292-4182-94ed-5d7153593c66.PNG" alt="drawing" width="300"/>  
